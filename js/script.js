@@ -49,14 +49,14 @@ $(document).ready(function(e) {
 	* = Controls active menu *
 	* Hover text for the last slide
 	*************************/
-	$('#products img').each(function(index, element) {
+	$('#ventures img').each(function(index, element) {
 		var time = new Date().getTime();
 		var oldHref = $(this).attr('src');
 		var myImg = $('<img />').attr('src', oldHref + '?' + time );
 		
 		myImg.load(function(e) {
 			img_loaded += 1;;
-			if ( img_loaded == $('#products img').length ) {
+			if ( img_loaded == $('#ventures img').length ) {
 				$(function() {
 					var pause = 10;
 					$(document).scroll(function(e) {
@@ -96,7 +96,7 @@ $(function() {
 	var pause = 50; // will only process code within delay(function() { ... }) every 100ms.
 	$(window).resize(function() {
 		delay(function() {
-				var gallery_images = $('#products img');
+				var gallery_images = $('#ventures img');
 				
 				var images_per_row = 0;
 				if ( gallery_images.length % 2 == 0 ) {
@@ -105,18 +105,18 @@ $(function() {
 					images_per_row = gallery_images.length / 2 + 1;
 				}
 				
-				var gallery_width = $('#products img').width() * $('#products img').length;
+				var gallery_width = $('#ventures img').width() * $('#ventures img').length;
 				gallery_width /= 2;
-				if ( $('#products img').length % 2 != 0 ) {
-					gallery_width += $('#products img').width();
+				if ( $('#ventures img').length % 2 != 0 ) {
+					gallery_width += $('#ventures img').width();
 				}
 				
-				$('#products .row').css('width', gallery_width );
+				$('#ventures .row').css('width', gallery_width );
 				
-				var left_pos = $('#products .row').width() - $('body').width();
+				var left_pos = $('#ventures .row').width() - $('body').width();
 				left_pos /= -2;
 				
-				$('#products .row').css('left', left_pos);
+				$('#ventures .row').css('left', left_pos);
 			
 			},
 			pause
@@ -252,12 +252,12 @@ jQuery(document).ready(function ($) {
 ******************/
 jQuery(document).ready(function ($) {
 	//Cache some variables
-	var images = $('#products a');
+	var images = $('#ventures a');
 	
 	images.hover(
 		function(e) {
 			var asta = $(this).find('img');
-			$('#products img').not( asta ).stop(false, false).animate(
+			$('#ventures img').not( asta ).stop(false, false).animate(
 				{
 					opacity: .5
 				},
@@ -271,7 +271,7 @@ jQuery(document).ready(function ($) {
 			$(this).prepend(zoom);
 		},
 		function(e) {
-			$('#products img').stop(false, false).animate(
+			$('#ventures img').stop(false, false).animate(
 				{
 					opacity: 1
 				},
@@ -310,15 +310,15 @@ jQuery(document).ready(function ($) {
 				offset_top = $('.slide[data-slide="' + (datasheet+1) + '"]').offset().top;
 				break;
 			case 'arrow-left':
-				offset_left = $('#products .row').offset().left + 452;
+				offset_left = $('#ventures .row').offset().left + 452;
 				if ( offset_left > 0 ) {
 					offset_left = '0px';
 				}
 				break;
 			case 'arrow-right':
-				offset_left = $('#products .row').offset().left - 452;
-				if ( offset_left < $('body').width() - $('#products .row').width() ) {
-					offset_left = $('body').width() - $('#products .row').width();
+				offset_left = $('#ventures .row').offset().left - 452;
+				if ( offset_left < $('body').width() - $('#ventures .row').width() ) {
+					offset_left = $('body').width() - $('#ventures .row').width();
 				}
 				break;
 		}
@@ -330,8 +330,8 @@ jQuery(document).ready(function ($) {
 		}
 		
 		if ( offset_left != false ) {
-			if ( $('#products .row').width() != $('body').width() ) {
-				$('#products .row').stop(false, false).animate({
+			if ( $('#ventures .row').width() != $('body').width() ) {
+				$('#ventures .row').stop(false, false).animate({
 					left: offset_left
 				}, 1500, 'easeInOutQuart');
 			}

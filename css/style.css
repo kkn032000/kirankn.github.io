@@ -380,7 +380,7 @@ body {
 	}
 }
 
-#products {
+#ventures {
 	background-color: #000;
 	margin: 0 auto;
 	overflow: hidden;
@@ -389,7 +389,7 @@ body {
 	width: 100%;
 }
 	
-	#products .col-12 {
+	#ventures .col-12 {
 		display: inline-block;
 		height: 451px;
 		margin: 0;
@@ -397,8 +397,8 @@ body {
 		width: 452px;
 	}
 
-	#products a,
-	#products img {
+	#ventures a,
+	#ventures img {
 		display: inline-block;
 		height: 100%;
 		margin: 0 auto;
@@ -406,24 +406,24 @@ body {
 	}
 	
 @media (max-width: 991px) {
-	#products {
+	#ventures {
 		text-align: center;
 		width: 100%;
 	}
 	
-	#products .row {
+	#ventures .row {
 		left: 0 !important;
 		margin: 0;
 		width: 100% !important;
 	}
 	
-	#products .col-12 {
+	#ventures .col-12 {
 		height: auto;
 		width: 50%
 	}
 
-	#products a,
-	#products img {
+	#ventures a,
+	#ventures img {
 		height: auto;
 		max-height: 100%;
 		max-width: 100%;
@@ -432,7 +432,7 @@ body {
 }
 	
 @media (max-width: 767px) {
-	#products .col-12 {
+	#ventures .col-12 {
 		width: 100%;
 	}
 }
@@ -507,12 +507,15 @@ body {
 	#contact-row-4 .col-12:hover {
 		height: 175px;
 		padding-top: 0;
+    color: #f39c12;
 	}
 	
 	#contact-row-4 .col-12 .hover-text {
 		display: none;
 		font-size: 20px;
 	}
+
+.icon:hover{color:#f39c12}
 
 #slide-7 {
 	background-color: #e4e6e5;
