@@ -550,11 +550,11 @@ body {
 }
 
 #arrows {
-	bottom: 10%;
-	height: 80px;
+	top: 10%;
+	right: 5%;
+  height: 80px;
+  width: 80px;
 	position: fixed;
-	right: 10%;
-	width: 80px;
 	z-index: 1000;
 }
 
