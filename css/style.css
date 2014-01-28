@@ -325,8 +325,8 @@ body {
 }
 
 	.title-row {
-		font-size: 35px;
-		padding-bottom: 50px;
+		font-size: 30px;
+		padding-bottom: 40px;
 	}
 	
 	.line-row .hr {
@@ -337,13 +337,13 @@ body {
 	}
 	
 	.subtitle-row {
-		font-size: 35px;
-		padding-bottom: 40px;
-		padding-top: 40px;
+		font-size: 25px;
+		padding-bottom: 30px;
+		padding-top: 30px;
 	}
 	
 	.content-row {
-		padding-top: 45px;
+		padding-top: 35px;
 	}
 	
 	.content-row i,
